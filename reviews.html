@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews | Travel Yatra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read traveler reviews and share your experience.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Travel Yatra</div>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button id="hamburger" aria-label="Menu">☰</button>
+  </header>
+
+  <section class="section hero-slab" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('manali-relax.jpg');">
+    <div class="slab-inner">
+      <h2>Traveler reviews</h2>
+      <p>Real experiences from real journeys.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div id="reviewsGrid" class="grid"></div>
+
+    <h3 style="margin-top:24px;">Submit a review</h3>
+    <form id="reviewForm" class="form">
+      <label>Name
+        <input type="text" name="name" required>
+      </label>
+      <label>Rating
+        <select name="rating" required>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+      </label>
+      <label>Review
+        <textarea name="text" required></textarea>
+      </label>
+      <button class="btn" type="submit">Submit</button>
+      <p id="reviewStatus" class="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Travel Yatra</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

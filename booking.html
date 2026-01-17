@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking | Travel Yatra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit your booking request for any package. No payment required.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Travel Yatra</div>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button id="hamburger" aria-label="Menu">☰</button>
+  </header>
+
+  <section class="section hero-slab" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('himachal-honeymoon.jpg');">
+    <div class="slab-inner">
+      <h2>Booking form</h2>
+      <p>Tell us your dates and preferences—no payment required.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <form id="bookingForm" class="form">
+      <label>Full name
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Phone
+        <input type="tel" name="phone" required>
+      </label>
+      <label>Package
+        <select id="packageSelect" name="package" required></select>
+      </label>
+      <label>Travel dates
+        <input type="text" name="dates" placeholder="e.g., 12–18 Feb 2026" required>
+      </label>
+      <label>Notes
+        <textarea name="notes" placeholder="Any preferences or questions?"></textarea>
+      </label>
+      <button class="btn" type="submit">Submit booking</button>
+      <p id="bookingStatus" class="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Travel Yatra</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

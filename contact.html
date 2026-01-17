@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Travel Yatra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch for custom itineraries, group trips, or questions.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">Travel Yatra</div>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button id="hamburger" aria-label="Menu">☰</button>
+  </header>
+
+  <section class="section hero-slab" style="background-image:linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('ladakh-circuit.jpg');">
+    <div class="slab-inner">
+      <h2>Contact us</h2>
+      <p>We’ll help you plan the perfect Himalayan escape.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <form id="contactForm" class="form">
+      <label>Name
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Message
+        <textarea name="message" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send</button>
+      <p id="contactStatus" class="status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Travel Yatra</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
